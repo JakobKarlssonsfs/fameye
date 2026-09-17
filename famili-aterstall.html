@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://mzpahzxetjtzmpoludkk.supabase.co; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'self'">
+  <title>Famili – välj nytt lösenord</title>
+  <link rel="icon" href="famili-logo.png" type="image/png">
+  <link rel="stylesheet" href="famili.css">
+  <script src="famili-reset.js" defer></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+  <main class="page">
+    <header class="brand">
+      <img src="famili-logo.png" width="108" height="108" alt="">
+      <p class="brand-name">Famili</p>
+    </header>
+    <section class="card" aria-labelledby="page-title">
+      <h1 id="page-title">Välj ett nytt lösenord</h1>
+      <p>Skriv ditt nya lösenord två gånger. Det ska innehålla minst åtta tecken.</p>
+      <form id="reset-form" novalidate hidden>
+        <label>Nytt lösenord<input id="password" type="password" autocomplete="new-password" minlength="8" required></label>
+        <label>Bekräfta lösenordet<input id="confirm-password" type="password" autocomplete="new-password" minlength="8" required></label>
+        <button id="submit-button" type="submit">Spara nytt lösenord</button>
+      </form>
+      <div id="message" class="message" role="status" aria-live="polite"></div>
+      <p class="small" id="help-text">Länken fungerar bara en begränsad tid och kan användas en gång.</p>
+      <noscript><p>Aktivera JavaScript i webbläsaren för att ändra lösenordet.</p></noscript>
+    </section>
+    <footer class="links"><a href="mailto:info@jrdevelopment.se">Behöver du hjälp?</a><a href="famili-integritetspolicy.html">Integritetspolicy</a></footer>
+  </main>
+</body>
+</html>
